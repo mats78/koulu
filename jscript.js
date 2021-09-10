@@ -1,7 +1,10 @@
 console.log("tiedosto2")
 
-window.onload = function()
-        {
-            console.log("onload funktio java2")
-        }
+function muunnaFahrenheit_Celcius() {
+
+}
+
+const button = document.querySelector('button')
+button.addEventListener('click', muunna)
+
 
