@@ -5,10 +5,19 @@ const fahrenheitTuloste = document.querySelector('#fahrenheit')
 const celciusTuloste = document.querySelector('#celcius')
 const button = document.querySelector('button')
 
-function muunnaFahrenheit_Celcius() {
-    
+function fahrenheitCelciukseksi(fahrenheit){
+    let celcius = (fahrenheit-32) / 1.8;
+    console.log(celcius);
+    return celcius;
 }
 
-button.addEventListener('click', muunna)
+function muunnaFahrenheit_Celcius() {
+    let syote  = fahrenheitSyote.value;
+    fahrenheitTuloste.textContent = syote;
+
+    celciusTuloste.textContent = fahrenheitCelciukseksi(syote);
+}
+
+button.addEventListener('click', muunnaFahrenheit_Celcius)
 
 
