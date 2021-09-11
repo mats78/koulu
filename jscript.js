@@ -15,7 +15,7 @@ function muunnaFahrenheit_Celcius() {
     let syote  = fahrenheitSyote.value;
     fahrenheitTuloste.textContent = syote;
 
-    celciusTuloste.textContent = fahrenheitCelciukseksi(syote);
+    celciusTuloste.textContent = Math.round(fahrenheitCelciukseksi(syote));
 }
 
 button.addEventListener('click', muunnaFahrenheit_Celcius)
