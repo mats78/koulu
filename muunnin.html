@@ -3,8 +3,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fahrenheit-Celcius-muunnin</title>
-    
-    <script type="text/javascript" src="jscript.js" defer></script>
+    <script src="jscript.js" defer></script>
+
 <style>
 
     * {
@@ -50,22 +50,24 @@
 
 
 </style>
+</head>
 <body>
     <div class="container">
         <div class="h">    
             <h1>Fahrenheit-Celcius-muunnin</h1>            
         </div>
         <div class="cf1">       
-                <label>Fahrenheit</label>            
-                <input type="number">
-                <button type="button">Muunna</button>
+                <label>Fahrenheit</label><br>            
+                <input type="number" id="f_input"><br>
+                <label>Celcius</label><br>           
+                <input type="number" id="c_input">                
          </div>
          <div class="cf2">
-                <label>Celcius:</label></br>       
-                <span id="fahrenheit">?</span>°F= 
-                <span id="celsius">?</span>°C
+                <label>Muunnettuna</label><br>                    
+                <span id="celsius">?</span>°C<br><br>
+                <span id="fahrenheit">?</span>°F
         </div>
     </div>
-    </div>
+
 </body>
-</head>
+</html>
